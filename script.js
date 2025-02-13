@@ -4,7 +4,7 @@ const message = document.getElementById('message');
 let noClicks = 0;
 
 yesButton.addEventListener('click', () => {
-    message.textContent = "Yay! I'm so happy! I can't wait to spend Valentine's Day with you! ❤️";
+    message.textContent = "Yown oh nag yes, hehee. Iloveyouuuu💖";
     message.style.display = "block";
 });
 
@@ -25,34 +25,31 @@ noButton.addEventListener('click', () => {
 
     switch (noClicks) {
         case 1:
-            message.textContent = "Are you sure?  Like, *really* sure?";
+            message.textContent = "Sus, bat no? Sure ka?";
             break;
         case 2:
-            message.textContent = "Double-checking... you definitely don't want to be my Valentine? Think of the chocolates!";
+            message.textContent = "Eh pinindot uli yung no eh. Sus naman, dahil ba wala ako pera? Isa pang tanong :D";
             break;
         case 3:
-            message.textContent = "Okay, last chance. This is your final answer?";
+            message.textContent = "Okay, last na. Sure ka ayaw mo tlaga??";
             break;
         case 4:
-            message.textContent = "Fine... but you're missing out on a great Valentine's date! Just kidding, one last time, are you sure?";
+            message.textContent = "Okee, sayang naman may plano naman na sana ehhh... Isa pa hehee";
             break;
         case 5:
-            message.textContent = "Okay, okay, I get it! But seriously... are you *absolutely* positive?";
+            message.textContent = "Okay, okay, what if sa bahay na lang then treat ko?";
             break;
         case 6:
-            message.textContent = "Are you sure you wouldn't like a romantic dinner and a movie?";
+            message.textContent = "Sure ka? Kakain hangang mabusog sobra, habang nanunuod ganunnn...";
             break;
         case 7:
-            message.textContent = "What about a cozy night in with some snacks?";
+            message.textContent = "Last, chance na talagaa itoo :(((";
             break;
         case 8:
-            message.textContent = "Last, last, LAST chance!  Don't make me beg!";
-            break;
-        case 9:
-            message.textContent = "Okay, I give up!  But you're still awesome. 😊";
+            message.textContent = "Okey titigil na, click mo na lang yung no para mag close na syaa.. :(((";
             break;
         default:
-            message.textContent = "Alright, alright, you've made your point! I'll stop asking, but just so you know, the 'Yes' button is still here if you change your mind 😉";
+            message.textContent = "Heheee last na talagaa need mo sumagott, promise andyan naman yung option para mag no tlagaa";
     }
     message.style.display = "block";
 });
