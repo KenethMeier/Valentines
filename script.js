@@ -4,9 +4,35 @@ const message = document.getElementById('message');
 let noClicks = 0;
 
 yesButton.addEventListener('click', () => {
-    message.textContent = "Yown oh nag yes, hehee. Iloveyouuuu💖";
+    message.textContent = "Yown oh nag yes, hehee. Iloveyouuuu💖 \n";
     message.style.display = "block";
+
+    yesButton.style.display = "none";
+    noButton.style.display = "none";
+
+    // Redirect after 5 seconds
+    const redirectDelay = 5; // 5-second delay
+    message.textContent += `\n  Teka lang ahhh! Redirecting in ${redirectDelay} seconds...`; // Updated message
+
+    let countdown = redirectDelay; // Initialize countdown
+
+    const countdownDisplay = document.createElement('span'); // Create a span for the countdown
+    countdownDisplay.textContent = countdown;
+    message.appendChild(countdownDisplay); // Add it to the message
+
+    const countdownInterval = setInterval(() => {
+        countdown--;
+        countdownDisplay.textContent = countdown; // Update the countdown display
+
+        if (countdown < 0) {
+            clearInterval(countdownInterval); // Stop the countdown
+            const youtubeLink = "https://www.youtube.com/shorts/QijWFU2j-dI"; // **REPLACE WITH YOUR YOUTUBE LINK**
+            window.location.href = youtubeLink; // Redirect to YouTube
+        }
+    }, 1000); // Update every 1000ms (1 second)
 });
+
+    
 
 noButton.addEventListener('click', () => {
     noClicks++;
